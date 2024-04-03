@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ComponentsPickDate">
+        <attr name="text" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ComponentsSpinner">
+        <attr name="imageResource" format="reference" />
+    </declare-styleable>
+</resources>

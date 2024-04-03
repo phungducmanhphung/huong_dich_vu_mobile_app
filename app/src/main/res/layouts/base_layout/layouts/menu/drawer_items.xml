@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/grDangNhapDK"
+        >
+        <item
+            android:icon="@drawable/ic_signin"
+            android:id="@+id/navDangNhap"
+            android:title="Đăng nhập"
+            />
+        <item
+            android:icon="@drawable/ic_signup"
+            android:id="@+id/navDangKi"
+            android:title="Đăng kí"
+            />
+    </group>
+</menu>

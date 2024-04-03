@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20sp"
+    android:gravity="center_vertical"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/img_khach_san"
+        android:layout_marginRight="10sp"
+        app:shapeAppearanceOverlay="@style/rounded"
+        android:id="@+id/ivHinhAnh"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvTenKS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên khách sạn dài thật là dài luôn Tên khách sạn dài thật là dài luôn Tên khách sạn dài thật là dài luôn "
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginBottom="5sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5sp"
+            >
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/ic_star_filed"
+                android:layout_marginRight="10sp"
+                />
+            <TextView
+                android:id="@+id/tvStar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.9 / 5"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5sp"
+            >
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/ic_location"
+                android:layout_marginRight="10sp"
+                />
+
+            <TextView
+                android:id="@+id/tvDiaChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Located in Da Nang and within 1.4 km of My Khe Beach, Agena Hoa Ban Trắng features a private beach area, allergy-free rooms, and free WiFi throughout the property."
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá qua đêm: "
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/tvGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100.000 VNĐ"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

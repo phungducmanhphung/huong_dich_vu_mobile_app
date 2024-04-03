@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    >
+
+    <com.example.client_khach_hang2.ui.base.components.ComponentSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/spinnerViTri"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        >
+        <com.example.client_khach_hang2.ui.base.components.ComponentPickDate
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/pickDateNgayNhanPhong"
+            app:text="Ngày nhận phòng"
+            />
+        <com.example.client_khach_hang2.ui.base.components.ComponentPickDate
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/pickDateNgayTraPhong"
+            app:text="Ngày trả phòng"
+            />
+    </LinearLayout>
+    <com.example.client_khach_hang2.ui.base.components.ComponentSpinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        app:imageResource="@drawable/ic_persons"
+        android:id="@+id/spinnerSoNguoi"
+        />
+
+</LinearLayout>

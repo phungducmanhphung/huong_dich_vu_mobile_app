@@ -1,0 +1,58 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+}
+
+android {
+    namespace 'com.example.client_khach_hang2'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.client_khach_hang2"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/layouts/base_layout/layouts',
+                    'src/main/res/layouts/base_layout/components',
+                    'src/main/res/layouts/base_layout/layout_items',
+                    'src/main/res/layouts/base_layout/pages',
+                    'src/main/res/layouts/base_layout',
+                    'src/main/res/layouts/activites',
+                    'src/main/res/layouts/fragments',
+                    'src/main/res/layouts/content',
+                    'src/main/res/layouts',
+                    'src/main/res',
+            ]
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.glide
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}
