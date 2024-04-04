@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên khách sạn dài thật là dài luôn Tên khách sạn dài thật là dài luôn Tên khách sạn dài thật là dài luôn "
+            android:textStyle="bold"
+            android:layout_marginBottom="10sp"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10sp"
+            >
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/ic_star_filed"
+                android:layout_marginRight="10sp"
+                />
+            <TextView
+                android:id="@+id/tvStar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.9 / 5"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="30sp"
+            >
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/ic_location"
+                android:layout_marginRight="10sp"
+                />
+
+            <TextView
+                android:id="@+id/tvDiaChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Located in Da Nang and within 1.4 km of My Khe Beach, Agena Hoa Ban Trắng features a private beach area, allergy-free rooms, and free WiFi throughout the property."
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10sp"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/ivNgayBD"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_marginRight="5sp"
+                    />
+                <TextView
+                    android:id="@+id/tvNgayBD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày thuê"
+                    android:gravity="center_vertical"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10sp"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/ivNgayKT"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_marginRight="5sp"
+                    />
+                <TextView
+                    android:id="@+id/tvNgayKT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày trả phòng"
+                    android:gravity="center_vertical"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10sp"
+            android:layout_marginBottom="20sp"
+            >
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:src="@drawable/ic_persons"
+                android:layout_marginRight="10sp"
+                />
+            <Spinner
+                android:id="@+id/spSoNguoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20sp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thành tiền: "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                />
+            <TextView
+                android:id="@+id/tvGiaQuaDem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100.000 VNĐ"
+                />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt ngay"
+            android:background="@drawable/bg_orange_rounded1"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>
